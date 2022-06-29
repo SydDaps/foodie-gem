@@ -6,17 +6,24 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dapilah Sydney"]
   spec.email         = ["51008616+SydDaps@users.noreply.github.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{We call our gem foodie because this gem is going to do a couple of things around food, such as portraying them as either “Delicious!” or “Gross!”. Stay tuned.}
+  spec.homepage      = "https://github.com/SydDaps/foodie-gem"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["homepage_uri"] = "https://github.com/SydDaps/foodie-gem"
+  spec.metadata["source_code_uri"] = "https://github.com/SydDaps/foodie-gem"
+  spec.metadata["changelog_uri"] = "https://github.com/SydDaps/foodie-gem"
+
+  spec.add_dependency "activesupport", "~> 4.2.0"
+  spec.add_development_dependency "cucumber"
+  spec.add_development_dependency "aruba"
+  spec.add_dependency "thor"
+
+
+
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
